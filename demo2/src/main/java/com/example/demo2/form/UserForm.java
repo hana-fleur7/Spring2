@@ -1,27 +1,15 @@
-package com.example.demo2.domain;
+package com.example.demo2.form;
 
 import java.util.List;
 
-public class User {
-    private Integer id;
-
+public class UserForm {
+    
     private String name;
-
     private String email;
 
     private String password;
 
-    private List<String> hobbylist;
-
-    
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    private List<Integer> hobbyList;
 
     public String getName() {
         return name;
@@ -47,12 +35,13 @@ public class User {
         this.password = password;
     }
 
-    public List<String> getHobbyList() {
-        return hobbylist;
+    public List<Integer> getHobbyList() {
+        return hobbyList;
     }
 
-    public void setHobbyList(List<String> hobbylist) {
-        this.hobbylist = hobbylist;
+    public void setHobbyList(List<Integer> hobbyList) {
+        this.hobbyList = hobbyList;
     }
+
 
 }
